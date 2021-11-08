@@ -51,17 +51,18 @@ $querytab = mysqli_query($conn, "select * from node_ipal_2 order by id desc limi
 
     <section class="content">
         <div class="row">
+          <!-- field 1 -->
           <div class="col-lg-3 col-6">
-            <div class="small-box bg-info">
+            <div class="small-box bg-primary">
               <div class="inner">
                 <h3><?php echo $latest['pH'];?></h3>
                 <p>Sensor pH</p>
               </div>
             </div>
           </div>
-          <!-- ./col -->
+          <!-- field 2 -->
           <div class="col-lg-3 col-6">
-            <div class="small-box bg-success">
+            <div class="small-box bg-secondary">
               <div class="inner">
                 <h3><?php echo $latest['suhu'];?></h3>
                 <p>Sensor Suhu</p>
@@ -70,7 +71,7 @@ $querytab = mysqli_query($conn, "select * from node_ipal_2 order by id desc limi
           </div>
           <!-- field 3 -->
           <div class="col-lg-3 col-6">
-            <div class="small-box bg-info">
+            <div class="small-box bg-success">
               <div class="inner">
                 <h3><?php echo $latest['TSS'];?></h3>
                 <p>Sensor TSS</p>
