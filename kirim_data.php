@@ -15,13 +15,26 @@
         }
     }
     elseif ($node == 2) {
-        $q = mysqli_query($conn,"INSERT INTO node_ipal_1 (datetime,pH,suhu,TSS) VALUES ('$date','$pH','$suhu','$TSS')");
+        $q = mysqli_query($conn,"INSERT INTO node_ipal_2 (datetime,pH,suhu,TSS) VALUES ('$date','$pH','$suhu','$TSS')");
         if($q)
         {
             echo "Sukses";
         }
     }
-    
+    elseif ($node == 3) {
+        $q = mysqli_query($conn,"INSERT INTO node_ipal_3 (datetime,pH,suhu,TSS) VALUES ('$date','$pH','$suhu','$TSS')");
+        if($q)
+        {
+            echo "Sukses";
+        }
+    }
+    elseif ($node == 4) {
+        $q = mysqli_query($conn,"INSERT INTO node_ipal_4 (datetime,pH,suhu,TSS) VALUES ('$date','$pH','$suhu','$TSS')");
+        if($q)
+        {
+            echo "Sukses";
+        }
+    }
     // $q = mysqli_query($conn,"INSERT INTO tb_dht (humidity,temperature,datetime) VALUES ('$humidity','$temperature','$date')");
     // if($q)
     // {
