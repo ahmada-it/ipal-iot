@@ -64,7 +64,7 @@ $querytab = mysqli_query($conn, "select * from node_ipal_5 order by id desc limi
           <div class="col-lg-3 col-6">
             <div class="small-box bg-secondary">
               <div class="inner">
-                <h3><?php echo $latest['suhu'];?></h3>
+                <h3><?php echo $latest['Suhu'];?></h3>
                 <p>Sensor Suhu</p>
               </div>
             </div>
@@ -112,7 +112,7 @@ $querytab = mysqli_query($conn, "select * from node_ipal_5 order by id desc limi
                           <td><?php echo ++$No; ?></td>
                           <td><?php echo $d["datetime"]; ?></td>
                           <td><?php echo $d["pH"]; ?></td>
-                          <td><?php echo $d["suhu"]; ?></td>
+                          <td><?php echo $d["Suhu"]; ?></td>
                           <td><?php echo $d["TSS"]; ?> </td>
                           <td><?php echo $d["DO"]; ?> </td>
                         </tr>
